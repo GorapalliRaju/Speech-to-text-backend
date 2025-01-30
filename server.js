@@ -4,7 +4,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const { createClient } = require('@deepgram/sdk'); // ✅ Correct Import
 const multer = require('multer');
-const Task = require('../backend/models/task');
+const Task = require('./models/task');
 
 const app = express();
 const apiKey = process.env.DEEPGRAM_API_KEY;
